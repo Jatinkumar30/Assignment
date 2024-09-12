@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { TfiHeadphoneAlt } from "react-icons/tfi";
 import {
   Box,
   Container,
@@ -22,7 +23,7 @@ import {
   FaChevronDown,
   FaChevronUp,
 } from "react-icons/fa";
-import Logo from "../Logo/Logo";
+// import Logo from "../Logo/Logo";
 import appstore_image from "../../assets/images/appstore.png";
 import playstore_image from "../../assets/images/playstore.png";
 
@@ -59,7 +60,12 @@ const Footer = () => {
             w="full"
           >
             <Box>
-              <Logo />
+              {/* <Logo /> */}
+              <img
+                src="https://a.storyblok.com/f/165154/x/b69011fb22/_logo.svg"
+                width="130px"
+                alt="Logo of the website"
+              />
             </Box>
             {!isSmallScreen && (
               <HStack
@@ -69,7 +75,7 @@ const Footer = () => {
                 flex={1}
                 mr={50}
               >
-                <Text fontSize="lg" fontWeight="bold">
+                <Text fontSize="md" fontWeight="normal">
                   Find Gelato in:
                 </Text>
                 <Link
@@ -103,10 +109,24 @@ const Footer = () => {
       </Container>
 
       {/* Main Footer Section */}
+      <Button
+              color="white"
+              borderRadius="50px"
+              bg="gray.900"
+              variant="solid"
+              size="md"
+              position="absolute"
+              left="92%"
+              top="98.5%"
+              mb={5}
+            >
+             <TfiHeadphoneAlt  />&nbsp; Contact Us
+            </Button>
       <Container maxW="container.xl" px={{ base: 6, md: 12 }}>
+      
         {isSmallScreen ? (
           <VStack spacing={6} align="start">
-            <Text fontSize="sm" fontWeight="bold">
+            <Text fontSize="" fontWeight="200">
               Gelato has created the world's largest network for local
               production and distribution of customized products. Together we
               bring creativity to life - and into business.
@@ -281,7 +301,7 @@ const Footer = () => {
               spacing={2}
               display={{ base: "none", md: "flex" }}
             >
-              <Text fontSize="sm" fontWeight="bold">
+              <Text fontSize="sm" fontWeight="normal">
                 Gelato has created the world's largest network for local
                 production and distribution of customized products. Together we
                 bring creativity to life - and into business.
@@ -296,7 +316,7 @@ const Footer = () => {
               >
                 Get Started
               </Button>
-              <Text fontSize="lg" fontWeight="bold" mt={2}>
+              <Text fontSize="lg" fontWeight="normal" mt={2}>
                 Get the App
               </Text>
               <HStack spacing={2} mt={2}>
@@ -306,7 +326,7 @@ const Footer = () => {
             </VStack>
 
             <VStack align="start" spacing={1} fontSize="sm">
-              <Text fontSize="md" fontWeight="bold">
+              <Text fontSize="md" fontWeight="semibold">
                 Print on Demand
               </Text>
               <Link href="#">What is print on demand?</Link>
@@ -335,7 +355,7 @@ const Footer = () => {
             </VStack>
 
             <VStack align="start" spacing={1} fontSize="sm">
-              <Text fontSize="md" fontWeight="bold">
+              <Text fontSize="md" fontWeight="semibold">
                 Start Selling
               </Text>
               <Link href="#">Embroidery</Link>
@@ -357,7 +377,7 @@ const Footer = () => {
             </VStack>
 
             <VStack align="start" spacing={1} fontSize="sm">
-              <Text fontSize="md" fontWeight="bold">
+              <Text fontSize="md" fontWeight="semibold">
                 Company
               </Text>
               <Link href="#">GelatoConnect</Link>
@@ -370,12 +390,7 @@ const Footer = () => {
               <Link href="#">Partners</Link>
               <Link href="#">Careers</Link>
               <Link href="#">Affiliates program</Link>
-              <Link href="#">Contact us</Link>
-              <Link href="#">Legal</Link>
-              <Link href="#">Privacy policy</Link>
-              <Link href="#">Cookie policy</Link>
-              <Link href="#">API terms</Link>
-              <Link href="#">Sitemap</Link>
+
             </VStack>
           </Grid>
         )}

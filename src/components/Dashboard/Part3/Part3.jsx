@@ -31,7 +31,8 @@ export default function Part3() {
               alt="Why choose us?"
               borderRadius="md"
               objectFit="cover"
-              width="100%"
+              width="90%"
+              marginLeft="73px"
               height="auto"
             />
           </Box>
@@ -92,11 +93,13 @@ export default function Part3() {
               as="h1"
               mb={2}
               size="3xl"
+              marginLeft="73px"
+              fontWeight="semibold"
               textAlign={{ base: "center", md: "left" }}
             >
-              Meet <br /> GelatoConnect <br /> at Printing <br /> United
+              Meet <br /> GelatoConnect at<br />Printing United
             </Heading>
-            <Text fontSize="lg" textAlign={{ base: "center", md: "left" }}>
+            <Text marginLeft="73px" fontSize="lg" textAlign={{ base: "center", md: "left" }}>
               Meet us at Printing United from September 10-12 in Las Vegas.{" "}
               <br /> Book your meeting slot to discover the innovative ways{" "}
               <br />
@@ -105,6 +108,7 @@ export default function Part3() {
             </Text>
 
             <Button
+              marginLeft="73px"
               color="white"
               bg="black"
               size="md"
@@ -126,6 +130,7 @@ export default function Part3() {
           >
             <Image
               src="https://a.storyblok.com/f/165154/1280x720/5d47159829/gelato-printing-united-2024.png/m/1000x0/" 
+              width="90%"
               alt="Your product showcase"
               borderRadius="lg"
               objectFit="cover"

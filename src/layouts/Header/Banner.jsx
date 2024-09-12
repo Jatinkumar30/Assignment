@@ -1,6 +1,8 @@
 import React from "react";
 import { Box, Text, Icon } from "@chakra-ui/react";
-import { InfoIcon } from "@chakra-ui/icons";
+// import { InfoIcon } from "@chakra-ui/icons";
+import { IoIosInformationCircleOutline } from "react-icons/io";
+
 
 const Banner = () => {
   return (
@@ -18,10 +20,11 @@ const Banner = () => {
       top={0}
       zIndex={900} 
     >
-      <Text fontSize="sm" mr={2}>
+      <Text fontSize="md" mr={2}>
         FREE SHIPPING for orders over $300. Order today
       </Text>
-      <Icon as={InfoIcon} ml={2} />
+      <IoIosInformationCircleOutline
+      size="20px" />
     </Box>
   );
 };

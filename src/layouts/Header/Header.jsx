@@ -82,6 +82,8 @@ const Header = () => {
         boxShadow="md"
         borderBottom="1px"
         borderColor="gray.200"
+        paddingLeft="10rem"
+        paddingRight="10rem"
         zIndex={900}
         position="sticky"
         width="100%"
@@ -113,6 +115,9 @@ const Header = () => {
                 leftIcon={<FaHeadphonesSimple />}
                 onClick={handleContact}
                 display={{ base: "none", md: "flex" }}
+                _hover={{
+                  bgColor: "gray.200",
+                }}
               >
                 Contact Us
               </Button>
@@ -123,6 +128,9 @@ const Header = () => {
                 leftIcon={<BsGlobe />}
                 rightIcon={<ChevronDownIcon />}
                 display={{ base: "none", md: "flex" }}
+                _hover={{
+                  bgColor: "gray.200",
+                }}
               >
                 EN/INR
               </Button>
@@ -132,6 +140,9 @@ const Header = () => {
                 color="black"
                 leftIcon={<FaShoppingCart />}
                 display={{ base: "none", md: "flex" }}
+                _hover={{
+                  bgColor: "gray.200",
+                }}
               >
                 Cart
               </Button>
@@ -142,6 +153,9 @@ const Header = () => {
                 leftIcon={<FaSignInAlt />}
                 onClick={handleLogin}
                 display={{ base: "none", md: "flex" }}
+                _hover={{
+                  bgColor: "gray.200",
+                }}
               >
                 Sign In
               </Button>

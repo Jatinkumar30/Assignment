@@ -15,7 +15,7 @@ export default function Part1() {
   const totalStars = 5; 
   return (
     <Box py={10}>
-      <Box maxW="80vw" mx="auto" borderRadius="lg" p={8}>
+      <Box maxW="70vw" mx="auto" borderRadius="lg" p={8}>
         <Flex
           direction={{ base: "column", md: "row" }}
           alignItems="center"
@@ -30,13 +30,13 @@ export default function Part1() {
           >
             <Heading
               as="h1"
-              size="2xl"
+              size="3xl"
+              fontWeight="400"
               textAlign={{ base: "center", md: "left" }}
               display={{ base: "none", md: "block" }} 
             >
-              Create, <br />
-              customize, and <br /> sell your own <br />
-              products
+              Print on demand for <br />
+              your ecommerce <br /> business
             </Heading>
             <Heading
               as="h1"
@@ -48,7 +48,7 @@ export default function Part1() {
             </Heading>
             <Text
               fontSize="2xl"
-              fontWeight="bold"
+              fontWeight="400"
               textAlign={{ base: "center", md: "left" }}
             >
               Sign up for free and only pay for what you sell

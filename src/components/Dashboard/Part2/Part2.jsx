@@ -53,8 +53,8 @@ export default function Part2() {
   return (
     <>
       <Box py={10} px={4} mx="auto" maxW={containerWidth}>
-        <Heading as="h2" size="2xl" mb={10} textAlign="center">
-          Why Choose Gelato
+        <Heading as="h2" size="3xl" fontWeight="500" mb={10} textAlign="center">
+          Why choose Gelato
         </Heading>
 
         <Flex
@@ -75,8 +75,9 @@ export default function Part2() {
               alt="Why choose us?"
               borderRadius="md"
               objectFit="cover"
-              width="100%"
+              width="90%"
               height="auto"
+              marginLeft="73px"
             />
           </Box>
 
@@ -89,10 +90,10 @@ export default function Part2() {
             <Stack spacing={4}>
               {content.map((item, index) => (
                 <Box key={index}>
-                  <Text fontWeight="bold" fontSize="2xl">
+                  <Text fontWeight="normal" fontSize="2xl">
                     ▻ {item.title}
                   </Text>
-                  <Text mt={2}>{item.description}</Text>
+                  <Text fontWeight="300" mt={3}>{item.description}</Text>
                 </Box>
               ))}
             </Stack>
@@ -115,16 +116,17 @@ export default function Part2() {
             flex="1"
             order={{ base: 2, md: 1 }}
           >
-            <Text fontSize="xl">For print on demand sellers</Text>
+            <Text marginLeft="73px" fontSize="xl">For print on demand sellers</Text>
             <Heading
               as="h1"
+              marginLeft="73px"
               size="3xl"
+              fontWeight="semibold"
               textAlign={{ base: "center", md: "left" }}
             >
-              Accelerate <br /> business growth <br /> with innovative <br />{" "}
-              design tools and <br /> apps
+              Accelerate business <br /> growth with <br /> innovative design <br /> tools and apps
             </Heading>
-            <Text fontSize="2xl" textAlign={{ base: "center", md: "left" }}>
+            <Text fontSize="2xl" marginLeft="73px" textAlign={{ base: "center", md: "left" }}>
               See how our cutting-edge solutions can <br /> help you reach new
               customers and <br /> maximize your profits.{" "}
             </Text>
@@ -133,6 +135,7 @@ export default function Part2() {
               color="white"
               bg="black"
               size="md"
+              marginLeft="73px"
               borderRadius="50px"
               _hover={{
                 color: "#bbbbbb",
@@ -150,6 +153,7 @@ export default function Part2() {
           >
             <Image
               src="https://a.storyblok.com/f/165154/1200x1200/35ff04c4c9/cc-55_marketing-assets-for-personalization-studio.gif/m/" // Replace with your image URL
+              width="90%"
               alt="Your product showcase"
               borderRadius="lg"
               objectFit="cover"
